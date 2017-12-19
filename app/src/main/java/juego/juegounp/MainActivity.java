@@ -48,6 +48,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         restart.setOnClickListener(this);
 
         //===================================
+        //metodo Onclick Listner para la imagen rotativa de dado
         iv_player.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -70,7 +71,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 if (playerThrow == cpuThrow) {
                     Toast.makeText(MainActivity.this, "Lanza otra vez", Toast.LENGTH_SHORT).show();
                 }
-                //do {
 
                     //compara el numero de intentos del cpu
 
@@ -91,9 +91,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                         Toast.makeText(MainActivity.this, "Sigue jugando", Toast.LENGTH_SHORT).show();
 
                     }
-                //}while (cpuThrow <= numjugadas ) ;
-
-                //heere
+               //here setea
                 tv_cpu.setText("CPU: " + cpuPoints);
                 tv_player.setText("YOU: " + playerPoints);
                 tv_jugadas.setText("Jugadas Ramdon: " + numjugadas);
